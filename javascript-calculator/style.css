@@ -1,0 +1,129 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+h1,
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #2F4F4F;
+    text-align: center;
+}
+#container-app {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-app .app {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    padding: 20px;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 1px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.app .input {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    height: 50px;
+    padding-right: 15px;
+    padding-top: 10px;
+    text-align: right;
+    margin-right: 5px;
+    font-size: 25px;
+    overflow-x: auto;
+    transform: all 0.2s ease-in-out;
+}
+
+.app .input:hover {
+    border: 1px solid #bbb;
+    -webkit-box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.app .operators div{
+    display: inline-block;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    width: 70px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 4px 10px 0;
+    cursor: pointer;
+    background-color: #ddd;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.app .operators div:hover{
+    background-color: #ddd;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #aaa;
+}
+
+.app .operators div:active{
+    font-weight: bold;
+}
+
+.app .left-panel{
+    display: inline-block;
+}
+
+.app .left-panel .numbers div{
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    width: 70px;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 4px 10px 0;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: border-color .2s ease-in-out, background-color .2s, box-shadow .2s;
+}
+
+.app .left-panel .numbers div:hover{
+    background-color: #f1f1f1;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #bbb;
+}
+
+.app .left-panel .numbers div:active{
+    font-weight: bold;
+}
+
+.app .equal{
+    display: inline-block;
+    border: 1px solid #3079ed;
+    border-radius: 3px;
+    width: 17%;
+    text-align: center;
+    padding: 117px 10px;
+    margin: 10px 6px 10px 0;
+    vertical-align: top;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4d90fe;
+    transition: all .2s ease-in-out;
+}
+
+.app .equal:hover{
+    background-color: #307CF9;
+    -webkit-box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    border-color: #1857BB;
+}
+
+.app .equal:active{
+    font-weight: bold;
+}
+
+
